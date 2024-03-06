@@ -14,7 +14,7 @@ TextField::TextField(const std::string &path) : TextField()
 	std::ifstream fin(path);
 
 	if (fin.fail() || fin.is_open() == false) {
-		throw "Не удалось открыть файл";
+		throw "РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р»";
 	}
 
 	std::string s;

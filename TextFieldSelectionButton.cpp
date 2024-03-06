@@ -41,13 +41,13 @@ void TextFieldSelectionButton::Draw(HDC mainHDC) const
 	word_place = { this->x + this->width - this->height + this->margin_top - 1, this->y + this->margin_top + letter_margin, this->x + this->width - 1, this->y + this->height - letter_margin };
 	DrawTextA(mainHDC, "X", 1, &word_place, DT_CENTER);
 
-	SelectObject(mainHDC, B_COLOUR[COLOUR::BORDERLINE]); // ðàìêà ñïðàâà
+	SelectObject(mainHDC, B_COLOUR[COLOUR::BORDERLINE]); // Ñ€Ð°Ð¼ÐºÐ° ÑÐ¿Ñ€Ð°Ð²Ð°
 	Rectangle(mainHDC, this->x + this->width - 1, this->y, this->x + this->width + 1, this->y + this->height + 1);
 }
 
 void TextFieldSelectionButton::DrawTop(HDC mainHDC) const
 {
-	SelectObject(mainHDC, B_COLOUR[this->TopColour]); // âåðõ
+	SelectObject(mainHDC, B_COLOUR[this->TopColour]); // Ð²ÐµÑ€Ñ…
 	Rectangle(mainHDC, this->x, this->y, this->x + this->width, this->y + this->margin_top + 1);
 }
 

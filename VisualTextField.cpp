@@ -88,8 +88,8 @@ void VisualTextField::Draw(HDC hdc)
 	SelectObject(hdc, B_COLOUR[COLOUR::BORDERLINE]);
 	Rectangle(hdc, this->x + this->width - this->margin_right, this->y + this->margin_top, this->x + this->width + 1, this->y + this->height + 1);
 
-	//BitBlt(hdc, this->x, this->y + this->margin_top, 10, this->getNumberVisiblePixelRows(), this->ColourText_HDC.supHDC, 0, this->ScrollPos, SRCCOPY);  // ñëåâà
-	//BitBlt(hdc, this->x + this->width - 10, this->y + this->margin_top, 10, this->getNumberVisiblePixelRows(), this->ColourText_HDC.supHDC, 0, this->ScrollPos, SRCCOPY);  // ñïàðâà
+	//BitBlt(hdc, this->x, this->y + this->margin_top, 10, this->getNumberVisiblePixelRows(), this->ColourText_HDC.supHDC, 0, this->ScrollPos, SRCCOPY);  // ÑÐ»ÐµÐ²Ð°
+	//BitBlt(hdc, this->x + this->width - 10, this->y + this->margin_top, 10, this->getNumberVisiblePixelRows(), this->ColourText_HDC.supHDC, 0, this->ScrollPos, SRCCOPY);  // ÑÐ¿Ð°Ñ€Ð²Ð°
 	//long ost = this->getNumberVisiblePixelRows() + SliderTextFieldY.getPos() - this->getNumberRows() * letter_height;
 	//if (ost > 0) {
 	//	SelectObject(hdc, P_Null);
@@ -140,13 +140,13 @@ void VisualTextField::ScrollX(long changes)
 void VisualTextField::CreateColourText_HDC()
 {
 	//SetBkMode(this->FileName_HDC.supHDC, TRANSPARENT);
-	//SetTextColor(this->FileName_HDC.supHDC, RGB(255, 255, 255));   // !!!!!!!!! öâåò
+	//SetTextColor(this->FileName_HDC.supHDC, RGB(255, 255, 255));   // !!!!!!!!! Ñ†Ð²ÐµÑ‚
 	//SelectObject(this->FileName_HDC.supHDC, P_Null);
 	//SetBkMode(this->Number_HDC.supHDC, TRANSPARENT);
-	//SetTextColor(this->Number_HDC.supHDC, RGB(255, 255, 255));   // !!!!!!!!! öâåò
+	//SetTextColor(this->Number_HDC.supHDC, RGB(255, 255, 255));   // !!!!!!!!! Ñ†Ð²ÐµÑ‚
 	//SelectObject(this->Number_HDC.supHDC, P_Null);
 	//SetBkMode(this->ColourText_HDC.supHDC, TRANSPARENT);
-	//SetTextColor(this->ColourText_HDC.supHDC, RGB(255, 255, 255));   // !!!!!!!!! öâåò
+	//SetTextColor(this->ColourText_HDC.supHDC, RGB(255, 255, 255));   // !!!!!!!!! Ñ†Ð²ÐµÑ‚
 	//SelectObject(this->ColourText_HDC.supHDC, P_Null);
 
 	SelectObject(this->FileName_HDC.supHDC, B_COLOUR[COLOUR::BORDERLINE]);

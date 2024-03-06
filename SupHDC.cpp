@@ -40,7 +40,7 @@ void SupHDC::Create(HWND FatherhWnd, std::size_t width, std::size_t height)
 	SelectObject(this->supHDC, F_Main);
 
 	SetBkMode(this->supHDC, TRANSPARENT);
-	SetTextColor(this->supHDC, RGB(255, 255, 255));   // !!!!!!!!! ˆ‚ÂÚ
+	SetTextColor(this->supHDC, RGB(255, 255, 255));   // !!!!!!!!! —Ü–≤–µ—Ç
 	SelectObject(this->supHDC, P_Null);
 }
 
@@ -77,7 +77,7 @@ std::size_t SupHDC::getHeight()
 
 void SupHDC::Draw(HDC mainHDC, int mx, int my, int width, int height, int sx, int sy, DWORD rop) const
 {
-	BitBlt(mainHDC, mx, my, width, height, this->supHDC, sx, sy, rop);  // ÒÎÂ‚‡
+	BitBlt(mainHDC, mx, my, width, height, this->supHDC, sx, sy, rop);  // —Å–ª–µ–≤–∞
 }
 
 void SupHDC::DrawLoopedY(HDC mainHDC, int mx, int my, int width, int height, int sx, int sy, DWORD rop) const

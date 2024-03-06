@@ -41,12 +41,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 
 
-LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)  // обработка событий
+LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)  // РѕР±СЂР°Р±РѕС‚РєР° СЃРѕР±С‹С‚РёР№
 {
 	switch (message)
 	{
-		case WM_HSCROLL:   // горизонтальные
-		case WM_VSCROLL:   // вертикальные
+		case WM_HSCROLL:   // РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ
+		case WM_VSCROLL:   // РІРµСЂС‚РёРєР°Р»СЊРЅС‹Рµ
 		{
 			Slider *slider = nullptr;
 
@@ -65,20 +65,20 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
 			}
 
 			switch (LOWORD(wParam)) {
-				case SB_LINERIGHT:     // стрелочки
+				case SB_LINERIGHT:     // СЃС‚СЂРµР»РѕС‡РєРё
 					slider->Scroll(1);
 					break;
-				case SB_LINELEFT:     // стрелочки
+				case SB_LINELEFT:     // СЃС‚СЂРµР»РѕС‡РєРё
 					slider->Scroll(-1);
 					break;
-				case SB_PAGERIGHT:     // пустая область
+				case SB_PAGERIGHT:     // РїСѓСЃС‚Р°СЏ РѕР±Р»Р°СЃС‚СЊ
 					slider->ScrollPage(1);
 					break;
-				case SB_PAGELEFT:     // пустая область
+				case SB_PAGELEFT:     // РїСѓСЃС‚Р°СЏ РѕР±Р»Р°СЃС‚СЊ
 					slider->ScrollPage(-1);
 					break;
-				case SB_THUMBTRACK:    // тянем за ползунок
-				//case SB_THUMBPOSITION:  // отпускаем ползунок
+				case SB_THUMBTRACK:    // С‚СЏРЅРµРј Р·Р° РїРѕР»Р·СѓРЅРѕРє
+				//case SB_THUMBPOSITION:  // РѕС‚РїСѓСЃРєР°РµРј РїРѕР»Р·СѓРЅРѕРє
 					slider->setPos(long(HIWORD(wParam)));
 					break;
 			}
@@ -168,14 +168,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
 			//Rectangle(MainHdc, 120, 30, 230, 230);
 			EndPaint(hWnd, &MainPs);
 
-			//if (!position_WM_SETREDRAW) { SendMessage(hWnd, WM_SETREDRAW, false, 0); }  // убрать отрисовку если она не нужна
+			//if (!position_WM_SETREDRAW) { SendMessage(hWnd, WM_SETREDRAW, false, 0); }  // СѓР±СЂР°С‚СЊ РѕС‚СЂРёСЃРѕРІРєСѓ РµСЃР»Рё РѕРЅР° РЅРµ РЅСѓР¶РЅР°
 
 			break;
 		}
 
 		case WM_SIZE:
 		{
-			UpdateSizeScreen(hWnd, LOWORD(lParam), HIWORD(lParam));   // это можно перенести в WM_EXITSIZEMOVE только нужно получать размеры экрана
+			UpdateSizeScreen(hWnd, LOWORD(lParam), HIWORD(lParam));   // СЌС‚Рѕ РјРѕР¶РЅРѕ РїРµСЂРµРЅРµСЃС‚Рё РІ WM_EXITSIZEMOVE С‚РѕР»СЊРєРѕ РЅСѓР¶РЅРѕ РїРѕР»СѓС‡Р°С‚СЊ СЂР°Р·РјРµСЂС‹ СЌРєСЂР°РЅР°
 			return 0;
 		}
 
@@ -186,7 +186,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
 			//return (LRESULT)GetSysColorBrush(COLOR_WINDOW);
 			SetTextColor((HDC)wParam, RGB(255, 255, 255));  
 			SetBkMode((HDC)wParam, TRANSPARENT);
-			return (LRESULT)B_COLOUR[COLOUR::BORDERLINE];   // !!!!!!!! поменять 
+			return (LRESULT)B_COLOUR[COLOUR::BORDERLINE];   // !!!!!!!! РїРѕРјРµРЅСЏС‚СЊ 
 			break;
 		}
 

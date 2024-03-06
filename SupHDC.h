@@ -18,7 +18,7 @@ public:
 	void Draw(HDC mainHDC, int mx, int my, int width, int height, int sx, int sy, DWORD rop) const;
 	void DrawLoopedY(HDC mainHDC, int mx, int my, int width, int height, int sx, int sy, DWORD rop) const;
 	void DrawLoopedX(HDC mainHDC, int mx, int my, int width, int height, int sx, int sy, DWORD rop) const;
-	// !!!!!!!!!!!!!!!! добавить по обеим одновременно
+	// !!!!!!!!!!!!!!!! РґРѕР±Р°РІРёС‚СЊ РїРѕ РѕР±РµРёРј РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ
 
 	HDC supHDC;
 private:

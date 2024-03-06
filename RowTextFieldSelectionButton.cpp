@@ -96,7 +96,7 @@ void RowTextFieldSelectionButton::Draw(HDC mainHDC)
 void RowTextFieldSelectionButton::addTextFieldSelectionButton() {
 	OPENFILENAMEA ofn;
 	char PathFile[260] {};
-	SetOpenFileParams(this->FatherhWnd, &ofn, PathFile, ".txt", "◊‡ÒÚÓÂ(*.txt *.cpp *.h)\0*.txt;*.cpp;*.h\0À˛·ÓÈ Ù‡ÈÎ(*.*)\0*.*\0\0", OFN_PATHMUSTEXIST);
+	SetOpenFileParams(this->FatherhWnd, &ofn, PathFile, ".txt", "–ß–∞—Å—Ç–æ–µ(*.txt *.cpp *.h)\0*.txt;*.cpp;*.h\0–õ—é–±–æ–π —Ñ–∞–π–ª(*.*)\0*.*\0\0", OFN_PATHMUSTEXIST);
 	if (GetOpenFileNameA(&ofn)) {
 		this->addTextFieldSelectionButton(PathFile);
 	}
@@ -140,10 +140,10 @@ void RowTextFieldSelectionButton::addTextFieldSelectionButton(const std::string 
 		}
 	}
 	catch (const char* str) {
-		MessageBoxA(this->FatherhWnd, str, "Œ¯Ë·Í‡ ÓÚÍ˚ÚËˇ Ù‡ÈÎ‡!", MB_OK | MB_ICONERROR);
+		MessageBoxA(this->FatherhWnd, str, "–û—à–∏–±–∫–∞ –æ—Ç–∫—Ä—ã—Ç–∏—è —Ñ–∞–π–ª–∞!", MB_OK | MB_ICONERROR);
 	}
 	catch (...) {
-		MessageBoxA(this->FatherhWnd, "¬ÓÁÏÓÊÌÓ ÌÂÔ‡‚ËÎ¸Ì˚È ÔÛÚ¸ ËÎË ÚËÔ Ù‡ÈÎ‡", "Œ¯Ë·Í‡ ÓÚÍ˚ÚËˇ Ù‡ÈÎ‡!", MB_OK | MB_ICONERROR);
+		MessageBoxA(this->FatherhWnd, "–í–æ–∑–º–æ–∂–Ω–æ –Ω–µ–ø—Ä–∞–≤–∏–ª—å–Ω—ã–π –ø—É—Ç—å –∏–ª–∏ —Ç–∏–ø —Ñ–∞–π–ª–∞", "–û—à–∏–±–∫–∞ –æ—Ç–∫—Ä—ã—Ç–∏—è —Ñ–∞–π–ª–∞!", MB_OK | MB_ICONERROR);
 	}
 }
 

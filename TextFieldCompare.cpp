@@ -156,7 +156,7 @@ void TextField::PairTextFieldComparisonResult::CompareWord(std::vector<TextField
 	//	}
 	//}
 
-	//std::vector<std::pair<std::size_t, std::size_t>> result;  // какая строка соединяется с какой
+	//std::vector<std::pair<std::size_t, std::size_t>> result;  // РєР°РєР°СЏ СЃС‚СЂРѕРєР° СЃРѕРµРґРёРЅСЏРµС‚СЃСЏ СЃ РєР°РєРѕР№
 	//result.reserve(previous[0][0]);
 
 	//std::size_t i = 0, j = 0;

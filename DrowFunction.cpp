@@ -71,10 +71,10 @@ void BuildWidget(HWND hWnd) {
 	int new_size_sceen_x = size_screen_x - slider_width - 2 * margin_x;
 	//int screen_middle_x = (size_screen_x - letter_height) / 2;
 
-	// выбор файлов
+	// РІС‹Р±РѕСЂ С„Р°Р№Р»РѕРІ
 	RowSelectionButtons.Create(width, height, new_size_sceen_x - letter_height - 2 * letter_margin - RowTextFeildSelectionButtonTopSize, letter_height + 2 * letter_margin + RowTextFeildSelectionButtonTopSize, hWnd);
 
-	// добавление файлов
+	// РґРѕР±Р°РІР»РµРЅРёРµ С„Р°Р№Р»РѕРІ
 	ButtonChooseFile = CreateWindowA("BUTTON", "+", WS_VISIBLE | WS_CHILD | ES_CENTER, width + new_size_sceen_x - letter_height - letter_margin, height + letter_margin + RowTextFeildSelectionButtonTopSize, letter_height, letter_height, hWnd, HMENU(IndexButtonChooseFile), NULL, NULL);
 	SendMessage(ButtonChooseFile, WM_SETFONT, WPARAM(F_Main), true);
 	/*
@@ -83,14 +83,14 @@ void BuildWidget(HWND hWnd) {
 	*/
 #define space_between 10
 	height += letter_height + 2 * letter_margin + RowTextFeildSelectionButtonTopSize + margin_y;
-	// левое поле
+	// Р»РµРІРѕРµ РїРѕР»Рµ
 	VisualTextFieldLeft.Create(width, height, new_size_sceen_x / 2 - space_between, size_screen_y - height - slider_width, hWnd);
 
-	// правое поле
+	// РїСЂР°РІРѕРµ РїРѕР»Рµ
 	width += new_size_sceen_x / 2 + space_between;
 	VisualTextFieldRight.Create(width, height, new_size_sceen_x / 2 - space_between, size_screen_y - height - slider_width, hWnd);
 
-	// Y слайдер
+	// Y СЃР»Р°Р№РґРµСЂ
 	width += new_size_sceen_x / 2 - space_between + margin_x;
 	SliderTextFieldY.Create(NULL, WS_VISIBLE | WS_CHILD | SBS_VERT, width, height + letter_height, slider_width, size_screen_y - height - slider_width - letter_height, hWnd);
 	SliderTextFieldY.stepPage = (std::max)(VisualTextFieldLeft.getNumberVisiblePixelRows(), VisualTextFieldRight.getNumberVisiblePixelRows()) - letter_height;
@@ -99,27 +99,27 @@ void BuildWidget(HWND hWnd) {
 
 	width = margin_x;
 	height = size_screen_y - slider_width;
-	// левый слайдер
+	// Р»РµРІС‹Р№ СЃР»Р°Р№РґРµСЂ
 	SliderTextFieldLeftX.Create(NULL, WS_VISIBLE | WS_CHILD | SBS_HORZ, width, height, new_size_sceen_x / 2 - space_between, slider_width, hWnd);
 	SliderTextFieldLeftX.stepPage = VisualTextFieldLeft.getNumberVisiblePixelColumns() - letter_width;
 
-	// правый слайдер
+	// РїСЂР°РІС‹Р№ СЃР»Р°Р№РґРµСЂ
 	width += new_size_sceen_x / 2 + space_between;
 	SliderTextFieldRightX.Create(NULL, WS_VISIBLE | WS_CHILD | SBS_HORZ, width, height, new_size_sceen_x / 2 - space_between, slider_width, hWnd);
 	SliderTextFieldRightX.stepPage = VisualTextFieldRight.getNumberVisiblePixelColumns() - letter_width;
 
 
-	// заполнить текстовые поля
+	// Р·Р°РїРѕР»РЅРёС‚СЊ С‚РµРєСЃС‚РѕРІС‹Рµ РїРѕР»СЏ
 	VisualTextFieldLeft.setActiveTextField(VoidTextFieldSelectionButton);
 
 	// ###############
 	//for (int i = 0; i < 7; i++)
 	//{
 	//	try {
-	//		RowSelectionButtons.addTextFieldSelectionButton("F:\\Папка с програми Романа\\Projects\\C++\\Полезные проги\\File_comparison\\Test\\MORE_L1.txt");
+	//		RowSelectionButtons.addTextFieldSelectionButton("F:\\РџР°РїРєР° СЃ РїСЂРѕРіСЂР°РјРё Р РѕРјР°РЅР°\\Projects\\C++\\РџРѕР»РµР·РЅС‹Рµ РїСЂРѕРіРё\\File_comparison\\Test\\MORE_L1.txt");
 	//	}
 	//	catch (...) {
-	//		MessageBoxA(hWnd, "Ошибка открытия файла.", "Ошибка!", MB_OK | MB_ICONERROR);
+	//		MessageBoxA(hWnd, "РћС€РёР±РєР° РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р°.", "РћС€РёР±РєР°!", MB_OK | MB_ICONERROR);
 	//	}
 	//}
 	//RowSelectionButtons.UpdateAll();
@@ -130,8 +130,8 @@ void BuildDrawEffecter(HWND hWnd) {
 	//DPIScale::Initialize(hWnd);
 
 
-	//HDC hdc;        //создаём контекст устройства
-	//PAINTSTRUCT ps; //создаём экземпляр структуры графического вывода
+	//HDC hdc;        //СЃРѕР·РґР°С‘Рј РєРѕРЅС‚РµРєСЃС‚ СѓСЃС‚СЂРѕР№СЃС‚РІР°
+	//PAINTSTRUCT ps; //СЃРѕР·РґР°С‘Рј СЌРєР·РµРјРїР»СЏСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹ РіСЂР°С„РёС‡РµСЃРєРѕРіРѕ РІС‹РІРѕРґР°
 
 	//hdc = BeginPaint(hWnd, &ps);
 	//SupHdc = CreateCompatibleDC(hdc);

@@ -10,6 +10,6 @@
 #include <set>
 #include <string>
 #include <list>
-#include <unordered_map>  // для hash
+#include <unordered_map>  // РґР»СЏ hash
 
 #include "ENUMS.h"

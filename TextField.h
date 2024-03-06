@@ -23,7 +23,7 @@ public:
 	*/
 
 	struct ComparisonResultRow {
-		std::vector<COLOUR> ColourRow = {};    			// цвет строки в [][0] и цвета букв в [][1...] 
+		std::vector<COLOUR> ColourRow = {};    			// С†РІРµС‚ СЃС‚СЂРѕРєРё РІ [][0] Рё С†РІРµС‚Р° Р±СѓРєРІ РІ [][1...] 
 		TextField::TextLenthRow const *TextLenthRow = nullptr;
 	};
 

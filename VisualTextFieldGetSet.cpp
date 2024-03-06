@@ -5,7 +5,7 @@
 std::set<TextField::PairTextFieldComparisonResult>::iterator VisualTextField::setActiveTextField(const TextFieldSelectionButton &ActiveTextField)
 {
 	this->setSimplyActiveTextField(new TextFieldSelectionButton(ActiveTextField, 0, 0, this->width + 1, letter_height + 2 * letter_margin + RowTextFeildSelectionButtonTopSize));
-	// @@@@@@@@@@@@@@@@@@@@@@  ïðè èçìåíåíèè èçìåðíèòü swapActiveTextField()
+	// @@@@@@@@@@@@@@@@@@@@@@  Ð¿Ñ€Ð¸ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¸ Ð¸Ð·Ð¼ÐµÑ€Ð½Ð¸Ñ‚ÑŒ swapActiveTextField()
 	//SetWindowTextA(this->StaticFileName, LPCSTR(this->ActiveTextField->getFileName().c_str()));   // 
 
 
