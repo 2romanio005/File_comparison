@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков\Includes">
+      <UniqueIdentifier>{6c8f0d45-28bc-456b-9720-c2f4c48bd854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Level 0">
+      <UniqueIdentifier>{335a7a99-9b1a-4d09-b89d-c9e474b86479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Level 2">
+      <UniqueIdentifier>{8bbf425c-35c1-47fc-8959-539645fe1bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Level 1">
+      <UniqueIdentifier>{5764f1e9-235d-4069-ab16-2698cd65c2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Level 3">
+      <UniqueIdentifier>{85a82992-63ef-484b-83d4-078da44c9393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Level 4">
+      <UniqueIdentifier>{b236c37f-5057-43f3-b7fd-56aa58c88d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Level main">
+      <UniqueIdentifier>{6db54ad3-8b15-440f-9444-1e73537b44bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Declaration.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="DrowFunction.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="File comparison.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="RowTextFieldSelectionButton.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="RowTextFieldSelectionButtonProcessButton.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="SupHDC.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TextField.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFieldCompare.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFieldSelectionButton.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualTextField.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualTextFieldGetSet.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="0Include.h">
+      <Filter>Файлы заголовков\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="1Connection.h">
+      <Filter>Файлы заголовков\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="2Connection.h">
+      <Filter>Файлы заголовков\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="3Connection.h">
+      <Filter>Файлы заголовков\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="4Connection.h">
+      <Filter>Файлы заголовков\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Файлы заголовков\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Файлы заголовков\Level 0</Filter>
+    </ClInclude>
+    <ClInclude Include="ENUMS.h">
+      <Filter>Файлы заголовков\Level 0</Filter>
+    </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>Файлы заголовков\Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="SupHDC.h">
+      <Filter>Файлы заголовков\Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="HASH.h">
+      <Filter>Файлы заголовков\Level 1</Filter>
+    </ClInclude>
+    <ClInclude Include="TextField.h">
+      <Filter>Файлы заголовков\Level 2</Filter>
+    </ClInclude>
+    <ClInclude Include="TextFieldSelectionButton.h">
+      <Filter>Файлы заголовков\Level 3</Filter>
+    </ClInclude>
+    <ClInclude Include="RowTextFieldSelectionButton.h">
+      <Filter>Файлы заголовков\Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualTextField.h">
+      <Filter>Файлы заголовков\Level 4</Filter>
+    </ClInclude>
+    <ClInclude Include="DrowFunction.h">
+      <Filter>Файлы заголовков\Level main</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>Файлы заголовков\Level main</Filter>
+    </ClInclude>
+    <ClInclude Include="Definition.h">
+      <Filter>Файлы заголовков\Level main</Filter>
+    </ClInclude>
+    <ClInclude Include="HASH.cpp">
+      <Filter>Файлы заголовков\Level 1</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

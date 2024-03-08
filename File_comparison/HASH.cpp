@@ -1,7 +1,5 @@
-#pragma once
-#include "Main.h"
+// не компилировать этот файл !!! это реализация шаблонного класса, которая в него инглудится
 
-template class HASH<std::string>;
 
 template<typename T>
 HASH<T>::HASH(const std::size_t sample)

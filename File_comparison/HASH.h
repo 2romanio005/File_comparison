@@ -36,5 +36,6 @@ private:
 };
 
 
+#include "HASH.cpp"
 
 
